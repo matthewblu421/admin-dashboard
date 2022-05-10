@@ -1,5 +1,5 @@
 div {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .container {
@@ -20,7 +20,7 @@ div {
   grid-template-columns: auto;
   width: 100%;
   max-width: 100%;
-  background-color: rgb(223, 201, 201);
+  background-color: #1992d4;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
   font-weight: 600;
   background-color: #1992d4;
   display: grid;
-  justify-items: baseline;
+  grid-template-columns: 30px;
 }
 
 .header {
@@ -71,7 +71,8 @@ body {
 
 .sidebar-menu {
   display: grid;
-  justify-content: center;
+  justify-content: baseline;
+  margin-left: 30px;
   gap: 40px;
   height: 100%;
   max-height: 100%;
@@ -108,5 +109,6 @@ body {
 }
 
 .dashdash {
-    max-width: 100%;
+  width: 170px;
+  min-width: 170px;
 }
