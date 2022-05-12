@@ -112,3 +112,38 @@ body {
   width: 170px;
   min-width: 170px;
 }
+
+.searchbar{
+  border-style: none;
+  border-radius: 10px;
+  width: 80%;
+  height: 1.5rem;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-color: #e2e8f0;
+}
+
+.magnify{
+  width: 60%;
+  height: auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.search-bar-div-upperleft{
+  display: grid;
+  grid-template-columns: 40px 40px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  
+  
+  
+}
