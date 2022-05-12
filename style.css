@@ -41,7 +41,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 1fr;
-  background-color: plum;
+  background-color: rgb(255, 255, 255);
 }
 
 .main-content {
@@ -113,7 +113,7 @@ body {
   min-width: 170px;
 }
 
-.searchbar{
+.searchbar {
   border-style: none;
   border-radius: 10px;
   width: 80%;
@@ -123,7 +123,13 @@ body {
   background-color: #e2e8f0;
 }
 
-.magnify{
+.searchbar:focus {
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 2px;
+}
+
+.magnify {
   width: 60%;
   height: auto;
   grid-column: 2/3;
@@ -132,18 +138,92 @@ body {
   justify-self: center;
 }
 
-.header{
+.header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  box-shadow: 0px 4px 8px rgb(187, 185, 185);
+  margin-bottom: 2px;
 }
 
-.search-bar-div-upperleft{
+.search-bar-div-upperleft {
   display: grid;
   grid-template-columns: 40px 40px 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
   align-items: center;
-  
-  
-  
+}
+
+.eye {
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+  border-color: black;
+  border-width: 0px;
+  border-style: solid;
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.bell {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.bell-icon-name-div-upperright {
+  display: grid;
+  grid-column: 2/3;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.name-top-right {
+  grid-column: 5/6;
+  grid-row: 2/3;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+}
+
+.header-bottom-left {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 45px 80px 1fr;
+  grid-template-rows: 80px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.bigger-eye {
+  grid-column: 2/3;
+  grid-row-start: 1;
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
+  border-color: black;
+  border-width: 0px;
+  border-style: solid;
+}
+
+.hi-div {
+  display: grid;
+  gap: 0px;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  align-items: center;
+  justify-content: left;
+  margin-left: 10px;
+}
+
+.hi-hi {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hash-name {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 }
