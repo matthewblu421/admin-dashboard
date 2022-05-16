@@ -46,8 +46,27 @@ body {
 
 .main-content {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  background-color: powderblue;
+  grid-template-columns: 15px 3.5fr 1fr;
+  background-color: #e2e8f0;
+  grid-template-rows: 0.8fr 3fr 3fr 3fr 0.8fr;
+}
+
+.your-projects, .announcements{
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  align-self: flex-end;
+  display: grid;
+}
+
+.your-projects{
+
+  grid-column-start: 2;
+ 
+}
+
+.announcements{
+  grid-column-start: 3;
 }
 
 .svgimg {
@@ -195,6 +214,45 @@ body {
   grid-row: 2/3;
 }
 
+.header-bottom-right{
+display: grid;
+}
+
+.threebuttondiv{
+  display: grid;
+  align-content: center;
+  justify-content: end;
+  margin-right: 29px;
+  column-gap: 25px;
+  
+}
+
+.button1{
+
+}
+
+.button2{
+
+}
+
+.button3{
+
+}
+
+.threebuttondiv > button {
+  background-color: #1992d4;
+  border-style: none;
+  border-radius: 18px;
+  width: 5.8rem;
+  height: 2.1rem;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  grid-row-start: 2;
+  justify-content: right;
+}
+
 .bigger-eye {
   grid-column: 2/3;
   grid-row-start: 1;
@@ -226,4 +284,17 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 600;
+}
+
+.card-div-main{
+background-color: rgb(189, 147, 190);
+grid-area: 2 / 2 / 5 / 3;
+outline: 1px solid black;
+}
+
+.announcements-div-main{
+background-color:aquamarine;
+grid-area: 2 / 3 / 5 / 3;
+outline: 1px solid black;
+
 }
