@@ -286,13 +286,13 @@ display: grid;
   font-weight: 600;
 }
 
-.card-div-main{
+.card-container-main{
 background-color: rgb(189, 147, 190);
 grid-area: 2 / 2 / 5 / 3;
 outline: 1px solid black;
 }
 
-.announcements-div-main{
+.announcements-container-main{
 background-color:aquamarine;
 grid-area: 2 / 3 / 5 / 3;
 outline: 1px solid black;
